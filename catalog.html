@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -36,8 +37,8 @@
         </ul>
 
         <ul class="user-menu">
-          <li class="user-menu__item">
-            <a class="user-menu__link" href="#">Поиск</a>
+          <li class="user-menu__item user-menu__item_search-dropdown">
+            <a class="user-menu__link search-link" href="#">Поиск</a>
             <div class="search">
               <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
                 <label class="search__label" for="search-field">Поле поиска</label>
@@ -45,8 +46,8 @@
               </form>
             </div>
           </li>
-          <li class="user-menu__item">
-            <a class="user-menu__link" href="#">Вход</a>
+          <li class="user-menu__item user-menu__item_login_dropdown">
+            <a class="user-menu__link login-link" href="#">Вход</a>
             <div class="login">
               <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="login__label" for="login-field">Логин</label>
@@ -65,7 +66,7 @@
             </div>
           </li>
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">Корзина</a>
+            <a class="user-menu__link cart-link" href="#">Корзина</a>
           </li>
         </ul>
 
