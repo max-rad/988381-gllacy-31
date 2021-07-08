@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="page-wrapper">
+    <div class="page-wrapper page-wrapper-1">
       <div class="container">
         <header class="header page-header">
           <nav class="navigation">
@@ -102,13 +102,13 @@
         </header>
 
         <main class="main">
-          <h1>Интернет-магазин мороженного Глейси</h1>
+          <h1 class="reset-h visually-hidden">Интернет-магазин мороженного Глейси</h1>
 
           <section class="slider">
-            <h2>Подборка товаров</h2>
+            <h2 class="reset-h visually-hidden">Подборка товаров</h2>
 
-            <ul class="slider__list">
-              <li class="slider__item slide">
+            <ul class="slider__list reset-li">
+              <li class="slider__item slide slide_current">
                 <h3 class="slide__title">Крем-брюле и пломбир с малиновым джемом</h3>
                 <a class="button button_decor button_block slide__button" href="#">Давайте оба!</a>
               </li>
@@ -123,25 +123,25 @@
             </ul>
 
             <div class="slider__controls">
-              <button class="slider__control" type="button">Первый слайд</button>
-              <button class="slider__control" type="button">Второй слайд</button>
-              <button class="slider__control" type="button">Третий слайд</button>
+              <button class="slider__control slider__control_current" type="button" aria-label="Первый слайд"></button>
+              <button class="slider__control" type="button" aria-label="Второй слайд"></button>
+              <button class="slider__control" type="button" aria-label="Третий слайд"></button>
             </div>
           </section>
 
           <div class="banners">
             <section class="banner banner-raspberry">
-              <h2 class="banner__title">Малинка даром!</h2>
+              <h2 class="banner__title reset-h">Малинка даром!</h2>
 
-              <p class="banner__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a class="button button_decor button_block" href="#">Хочу варенье!</a>
+              <p class="banner__description reset-p">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a class="button button_decor button_block banner__button" href="#">Хочу варенье!</a>
             </section>
 
             <section class="banner banner-chocolate">
-              <h2 class="banner__title">Шоколадки даром!</h2>
+              <h2 class="banner__title reset-h">Шоколадки даром!</h2>
 
-              <p class="banner__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a class="button button_decor button_block" href="#">Хочу шоколадки!</a>
+              <p class="banner__description reset-p">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a class="button button_decor button_block banner__button" href="#">Хочу шоколадки!</a>
             </section>
           </div>
 
