@@ -714,10 +714,18 @@ img {
   position: relative;
 }
 
-/*.bestseller {
-  display: flex;
-  flex-direction: column;
-}*/
+.bestsellers__item:before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background-image: url("../img/icons/icon_hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 .bestseller:hover .bestseller__button-wrapper {
   opacity: 1;
@@ -789,6 +797,84 @@ img {
   bottom: 21px;
   left: 46px;
   padding: 10px 16px;
+}
+
+/* ===== ABOUT ===== */
+
+.about {
+  padding: 24px 20px 28px;
+  border-radius: 16px;
+  background-image: url("../img/background/waffle_background.jpg");
+  background-position: 0 0;
+}
+
+.about__title {
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-dark);
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: 540px 540px;
+  column-gap: 26px;
+  row-gap: 15px;
+}
+
+.about__item {
+  position: relative;
+  padding-top: 9px;
+  padding-left: 55px;
+}
+
+.about__item:nth-child(1):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/about/icon_ice_cream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about__item:nth-child(2):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/about/icon_cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about__item:nth-child(3):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/about/icon_leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about__item:nth-child(4):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/about/icon_thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 
