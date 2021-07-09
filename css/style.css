@@ -55,6 +55,7 @@
   --button-linear-gradient-first: #F26843;
   --button-linear-gradient-second: #E74A35;
 
+  --price-text-shadow: rgba(49, 50, 53, 0.5);
   --button-text-shadow: rgba(160, 32, 11, 0.76);
   --button-box-shadow: rgba(172, 16, 0, 0.64);
 
@@ -509,6 +510,7 @@ img {
   grid-area: button;
   padding: 14px 25px;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .login__help {
@@ -648,6 +650,7 @@ img {
   display: grid;
   grid-template-columns: 560px 560px;
   column-gap: 26px;
+  margin-bottom: 40px;
 }
 
 .banner {
@@ -693,6 +696,99 @@ img {
   right: 22px;
   bottom: 22px;
   padding: 11px 22px 12px;
+}
+
+/* ===== BESTSELLERS ===== */
+
+.bestsellers {
+  margin-bottom: 40px;
+}
+
+.bestsellers__list {
+  display: grid;
+  grid-template-columns: 267px 267px 267px 267px;
+  column-gap: 26px;
+}
+
+.bestsellers__item {
+  position: relative;
+}
+
+/*.bestseller {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.bestseller:hover .bestseller__button-wrapper {
+  opacity: 1;
+}
+
+.bestseller__content-wrapper {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bestseller__description {
+  order: 1;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--basic-white);
+  text-decoration: underline var(--special-white-with-point-two-opacity);
+}
+
+.bestseller__image-wrapper {
+  width: 267px;
+  height: 267px;
+  margin-bottom: 13px;
+}
+
+.bestseller__image-wrapper img {
+  border-radius: 100%;
+}
+
+.bestseller__price {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  bottom: 69px;
+  text-shadow: 0 1px 3px var(--price-text-shadow);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-white);
+}
+
+.bestseller__price span {
+  margin-left: 5px;
+  text-shadow: inherit;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: inherit;
+}
+
+.bestseller__button-wrapper {
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  width: 293px;
+  height: 402px;
+  border-radius: 4px;
+  box-shadow: 0 20px 20px var(--special-black-with-point-two-opacity);
+  background-color: var(--special-white-with-point-two-opacity);
+  opacity: 0;
+}
+
+.bestseller__button {
+  position: absolute;
+  bottom: 21px;
+  left: 46px;
+  padding: 10px 16px;
 }
 
 
