@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/map.js"></script>
   </head>
   <body>
     <div class="page-wrapper page-wrapper-1">
@@ -100,8 +101,10 @@
             </div>
           </nav>
         </header>
+      </div>
 
-        <main class="main">
+      <main class="main">
+        <div class="container">
           <h1 class="reset-h visually-hidden">Интернет-магазин мороженного Глейси</h1>
 
           <section class="slider">
@@ -151,7 +154,9 @@
             <ul class="bestsellers__list reset-li">
               <li class="bestsellers__item bestseller">
                 <div class="bestseller__content-wrapper">
-                  <h3 class="bestseller__description reset-h">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                  <h3 class="bestseller__description reset-h">
+                    <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                  </h3>
                   <div class="bestseller__image-wrapper">
                     <img src="img/ice_cream/creamy_ice_cream_with_orange_jam_and_citrus_flakes.jpg" width="267" height="267" alt="Мороженнное бело-оранжегого цвета">
                   </div>
@@ -163,7 +168,9 @@
               </li>
               <li class="bestsellers__item bestseller">
                 <div class="bestseller__content-wrapper">
-                  <h3 class="bestseller__description reset-h">Сливочно-кофейное с кусочками шоколада</h3>
+                  <h3 class="bestseller__description reset-h">
+                    <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+                  </h3>
                   <div class="bestseller__image-wrapper">
                     <img src="img/ice_cream/creamy_coffee_ice_cream_with_chocolate_pieces.jpg" width="267" height="267" alt="Мороженное кофейного цвета посыпанное кусочками шоколада">
                   </div>
@@ -175,7 +182,9 @@
               </li>
               <li class="bestsellers__item bestseller">
                 <div class="bestseller__content-wrapper">
-                  <h3 class="bestseller__description reset-h">Сливочно-клубничное<br> с присыпкой из белого шоколада</h3>
+                  <h3 class="bestseller__description reset-h">
+                    <a href="#">Сливочно-клубничное<br> с присыпкой из белого шоколада</a>
+                  </h3>
                   <div class="bestseller__image-wrapper">
                     <img src="img/ice_cream/creamy_strawberry_ice_cream_with_white_chocolate_powder.jpg" width="267" height="267" alt="Мороженное розового цвета с посыпкой в виде сердечек">
                   </div>
@@ -187,7 +196,9 @@
               </li>
               <li class="bestsellers__item bestseller">
                 <div class="bestseller__content-wrapper">
-                  <h3 class="bestseller__description reset-h">Сливочное крем-брюле<br> с карамельной подливкой </h3>
+                  <h3 class="bestseller__description reset-h">
+                    <a href="#">Сливочное крем-брюле<br> с карамельной подливкой</a>
+                  </h3>
                   <div class="bestseller__image-wrapper">
                     <img src="img/ice_cream/creamy_creme-brulee_ice_cream_with_caramel_sauce.jpg" width="267" height="267" alt="Мороженное цвета крем-брюле политое карамелью">
                   </div>
@@ -228,51 +239,60 @@
             </ul>
           </section>
 
-          <article class="blog">
-            <h2 class="blog__title">Новое в нашем блоге</h2>
+          <div class="news">
+            <article class="blog">
+              <h2 class="blog__title reset-h">Новое в нашем блоге</h2>
 
-            <a class="blog__link" href="blank.html">10 способов сервировки фруктовых щербетов к столу</a>
-          </article>
+              <a class="blog__link" href="blank.html">10 способов сервировки фруктовых щербетов к столу</a>
+            </article>
 
-          <section class="newsletter">
-            <h2>Новостная рассылка</h2>
+            <section class="newsletter">
+              <div class="newsletter__wrapper">
+                <h2 class="visually-hidden reset-h">Новостная рассылка</h2>
 
-            <p class="newsletter__description">
-              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>
-              всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
-              и не слать всякой ненужной ерунды. Честно =)
+                <p class="newsletter__description reset-p">
+                  Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>
+                  всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
+                  и не слать всякой ненужной ерунды. Честно =)
+                </p>
+
+                <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="newsletter__label visually-hidden" for="email-field">Ваша почта</label>
+                  <input class="newsletter__input" id="email-field" type="email" placeholder="email@example.com">
+                  <button class="button button_decor button_block newsletter__button" type="submit">Отправить</button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section class="contacts">
+          <h2 class="visually-hidden reset-h">Контакты</h2>
+          <div class="contacts__map"></div>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDqnh4Q9rIaFY6Se7ZtGNmt3DXLaHdePo&callback=initMap&libraries=&v=weekly" async></script>
+          <!--<div class="contacts__map">
+            <img src="img/map.png" width="1200" height="430" alt="Офис компании по адресу: наб. Реки Карповки, 5 лит П, Санкт-Петербург">
+          </div>-->
+
+          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465563815!2d30.31522021633276!3d59.9682686666697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1625824978346!5m2!1sen!2sru" width="100%" height="430" allowfullscreen="" loading="lazy"></iframe>-->
+
+          <div class="contacts__description">
+            <p class="contacts__address reset-p">
+              Адрес главного офиса<br>
+              и офлайн-магазина:<br>
+              <span>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</span>
             </p>
+            <p class="contacts__phone reset-p">
+              Для заказов по телефону:<br>
+              <a href="tel:+78005558628">+7 800 555-86-28</a><br>
+              (с 10 до 20 ежедневно)
+            </p>
+            <button class="button button_decor button_block contacts__button" type="button">Форма обратной связи</button>
+          </div>
+        </section>
+      </main>
 
-            <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="newsletter__label" for="email-field">Ваша почта</label>
-              <input class="newsletter__input" id="email-field" type="email" placeholder="email@example.com">
-              <button class="button button_decor button_block newsletter__button" type="submit">Отправить</button>
-            </form>
-          </section>
-
-          <section class="contacts">
-            <h2>Контакты</h2>
-
-            <div class="contacts__map">
-              <img src="img/map.png" width="1200" height="430" alt="Офис компании по адресу: наб. Реки Карповки, 5 лит П, Санкт-Петербург">
-            </div>
-
-            <div class="contacts__description">
-              <p class="contacts__address">
-                Адрес главного офиса<br>
-                и офлайн-магазина:<br>
-                <span>наб. Реки Карповки, 5 лит П, Санкт-Петербург</span>
-              </p>
-              <p class="contacts__phone">
-                Для заказов по телефону:<br>
-                <a href="tel:+78005558628">+7 800 555-86-28</a><br>
-                (с 10 до 20 ежедневно)
-              </p>
-              <button class="button button_decor button_block contacts__button" type="button">Форма обратной связи</button>
-            </div>
-          </section>
-        </main>
-
+      <div class="container">
         <footer class="footer page-footer">
           <section class="socials">
             <h2>Социальные сети</h2>
