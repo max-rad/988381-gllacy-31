@@ -1134,38 +1134,6 @@ img {
   fill-opacity: 1;
 }
 
-/*.facebook-link {
-  width: 36px;
-  height: 36px;
-  background-image: url("../img/socials/logo_facebook.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.vkontakte-link {
-  width: 36px;
-  height: 36px;
-  background-image: url("../img/socials/logo_vkontakte.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.instagram-link {
-  width: 36px;
-  height: 36px;
-  background-image: url("../img/socials/logo_instagram.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.twitter-link {
-  width: 36px;
-  height: 36px;
-  background-image: url("../img/socials/logo_twitter.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
-
 /* ===== INFO ===== */
 
 .info {
@@ -1252,6 +1220,103 @@ img {
 .copyright__link:focus {
   color: var(--special-mandys-pink);
   box-shadow: 0 1px 0 0 var(--border-mandys-pink-with-point-three-opacity);
+}
+
+/* ========== MODAL ========== */
+
+.modal {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 6px;
+  background-color: var(--special-floral-white);
+}
+
+.modal-feedback {
+  display: none;
+  top: 338px;
+  bottom: auto;
+  width: 477px;
+  padding: 14px 25px 27px 24px;
+}
+
+.modal-feedback__title {
+  margin-bottom: 21px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal-feedback__form {
+  position: relative;
+}
+
+.modal-feedback__form input {
+  width: 267px;
+  height: 44px;
+  padding: 11px 14px;
+  border: 1px solid var(--special-gray-with-point-five-two-opacity);
+  border-radius: 4px;
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-feedback__form input::placeholder {
+  font-weight: 400;
+  color: var(--basic-gray);
+}
+
+.modal-feedback__form input:focus {
+  border: 2px solid var(--special-bright-blue-with-point-five-two-opacity);
+}
+
+.modal-feedback__form textarea {
+  width: 428px;
+  height: 154px;
+  margin-bottom: 63px;
+  padding: 11px 14px;
+  border: 1px solid var(--special-gray-with-point-five-two-opacity);
+  border-radius: 4px;
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.modal-feedback__form textarea:focus {
+  border: 2px solid var(--special-bright-blue-with-point-five-two-opacity);
+}
+
+.modal-feedback__form textarea::placeholder {
+  font-weight: 400;
+  color: var(--basic-gray);
+}
+
+.modal-feedback__submit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px 24px;
+}
+
+.modal-feedback__close {
+  position: absolute;
+  top: -48px;
+  right: -9px;
+  width: 18px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icons/icon_cross.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 
