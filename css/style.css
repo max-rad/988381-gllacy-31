@@ -535,22 +535,22 @@ img {
 }
 
 .login__forgot-password:hover {
-  color: #E84D37;
+  color: var(--special-cinnabar);
   text-decoration: underline var(--border-cinnabar-with-point-two-opacity);
 }
 
 .login__forgot-password:focus {
-  color: #E84D37;
+  color: var(--special-cinnabar);
   text-decoration: underline var(--border-cinnabar-with-point-two-opacity);
 }
 
 .login__sign-up:hover {
-  color: #E84D37;
+  color: var(--special-cinnabar);
   text-decoration: underline var(--border-cinnabar-with-point-two-opacity);
 }
 
 .login__sign-up:focus {
-  color: #E84D37;
+  color: var(--special-cinnabar);
   text-decoration: underline var(--border-cinnabar-with-point-two-opacity);
 }
 
@@ -1065,6 +1065,194 @@ img {
   cursor: pointer;
 }
 
+/* ========== FOOTER ========== */
+
+.page-footer {
+  display: grid;
+  grid-template-columns: 398px 1fr 1fr;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 25px;
+}
+
+/* ===== SOCIALS ===== */
+
+.socials {
+  padding-top: 18px;
+  padding-bottom: 5px;
+}
+
+.socials__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socials__item {
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+}
+
+.facebook-link:hover .facebook-link__path:nth-child(2) {
+  fill-opacity: 1;
+}
+
+.facebook-link:focus .facebook-link__path:nth-child(2) {
+  fill-opacity: 1;
+}
+
+.vkontakte-link:hover .vkontakte-link__path:nth-child(2),
+.vkontakte-link:hover .vkontakte-link__path:nth-child(3) {
+  fill-opacity: 1;
+}
+
+.vkontakte-link:focus .vkontakte-link__path:nth-child(2),
+.vkontakte-link:focus .vkontakte-link__path:nth-child(3) {
+  fill-opacity: 1;
+}
+
+.instagram-link:hover .instagram-link_opacity {
+  opacity: 1;
+}
+
+.instagram-link:focus .instagram-link_opacity {
+  opacity: 1;
+}
+
+.twitter-link:hover .twitter-link__path:nth-child(2) {
+  fill-opacity: 1;
+}
+
+.twitter-link:focus .twitter-link__path:nth-child(2) {
+  fill-opacity: 1;
+}
+
+/*.facebook-link {
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/socials/logo_facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.vkontakte-link {
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/socials/logo_vkontakte.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.instagram-link {
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/socials/logo_instagram.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.twitter-link {
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/socials/logo_twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}*/
+
+/* ===== INFO ===== */
+
+.info {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.info__list {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: baseline;
+  column-gap: 8px;
+}
+
+.info__item {
+  padding-left: 24px;
+}
+
+.info__link {
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--basic-white);
+  box-shadow: 0 1px 0 0 var(--special-white-with-point-two-opacity);
+}
+
+.info__link:hover {
+  color: var(--special-mandys-pink);
+  box-shadow: 0 1px 0 0 var(--border-mandys-pink-with-point-three-opacity);
+}
+
+.info__link:focus {
+  color: var(--special-mandys-pink);
+  box-shadow: 0 1px 0 0 var(--border-mandys-pink-with-point-three-opacity);
+}
+
+.info__providers {
+  position: relative;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.info__providers:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/icons/icon_heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* ===== COPYRIGHT ===== */
+
+.copyright {
+  justify-self: end;
+}
+
+.copyright__logo {
+  display: block;
+  width: 108px;
+  height: 31px;
+  margin-bottom: 14px;
+}
+
+.copyright__description {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.copyright__link {
+  box-shadow: 0 1px 0 0 var(--special-white-with-point-two-opacity);
+  color: inherit;
+}
+
+.copyright__link:hover {
+  color: var(--special-mandys-pink);
+  box-shadow: 0 1px 0 0 var(--border-mandys-pink-with-point-three-opacity);
+}
+
+.copyright__link:focus {
+  color: var(--special-mandys-pink);
+  box-shadow: 0 1px 0 0 var(--border-mandys-pink-with-point-three-opacity);
+}
 
 
 
