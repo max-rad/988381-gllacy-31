@@ -1677,6 +1677,7 @@ img {
   border-radius: 20px;
   color: var(--basic-white);
   background-color: var(--special-white-with-point-two-opacity);
+  cursor: pointer;
 }
 
 .select:hover .select__select {
