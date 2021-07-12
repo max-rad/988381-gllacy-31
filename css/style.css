@@ -1956,6 +1956,7 @@ img {
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--special-white-with-point-two-opacity);
+  cursor: pointer;
 }
 
 .filter__button:hover {
