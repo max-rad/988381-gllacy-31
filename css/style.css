@@ -1297,11 +1297,11 @@ img {
   fill-opacity: 1;
 }
 
-.instagram-link:hover .instagram-link_opacity {
+.instagram-link:hover .instagram-link__opacity {
   opacity: 1;
 }
 
-.instagram-link:focus .instagram-link_opacity {
+.instagram-link:focus .instagram-link__opacity {
   opacity: 1;
 }
 
@@ -1835,11 +1835,11 @@ img {
   user-select: none;
 }
 
-.option_chocolate {
+.option-chocolate {
   margin-right: 20px;
 }
 
-.option_sugar {
+.option-sugar {
   margin-right: 24px;
 }
 
@@ -1863,11 +1863,11 @@ img {
   background-color: transparent;
 }
 
-.filter__checkbox_on {
+.filter__svg-checkbox {
   display: none;
 }
 
-.filter__input_checkbox:checked + label .filter__checkbox_on {
+.filter__input_checkbox:checked + label .filter__svg-checkbox {
   z-index: 1;
   position: absolute;
   display: block;
