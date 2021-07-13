@@ -1015,25 +1015,13 @@ img {
 }
 
 .bestseller__price span {
-  margin-left: 5px;
+  margin-left: 2px;
   text-shadow: inherit;
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
   color: inherit;
 }
-
-/*.bestseller__button-wrapper {
-  position: absolute;
-  top: -6px;
-  left: -13px;
-  width: 293px;
-  height: 402px;
-  border-radius: 4px;
-  box-shadow: 0 20px 20px var(--special-black-with-point-two-opacity);
-  background-color: var(--special-white-with-point-two-opacity);
-  opacity: 0;
-}*/
 
 .bestseller__button {
   position: absolute;
@@ -1157,10 +1145,6 @@ img {
   line-height: 30px;
   text-decoration: underline solid var(--basic-dark-gray);
   color: var(--basic-dark);
-  /*background-image: linear-gradient(to right, var(--basic-dark-gray), var(--basic-dark-gray));
-  background-position: 0 27px;
-  background-repeat: repeat-x;
-  background-size: 2px 2px;*/
 }
 
 .blog__link:hover {
@@ -1641,10 +1625,6 @@ img {
   flex-wrap: wrap;
   min-height: 130px;
   align-content: space-between;
-  /*display: grid;
-  grid-template-areas:
-  "sort     price    fatness"
-  "toppings toppings button";*/
 }
 
 .filter__form fieldset {
@@ -2078,6 +2058,8 @@ img {
 }
 
 .product__price span {
+  margin-left: 2px;
+  font-weight: 700;
   font-size: 30px;
   line-height: 35px;
   color: inherit;
