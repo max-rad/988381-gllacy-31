@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="site" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин мороженного Глейси</title>
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="page">
     <div class="page-wrapper page-wrapper-1">
       <div class="container">
         <header class="header page-header">
@@ -262,9 +262,10 @@
         <section class="contacts">
           <h2 class="visually-hidden reset-h">Контакты</h2>
           <div class="contacts__map">
-            <img src="img/map.png" width="1200" height="430" alt="Офис по адресу: наб. Реки Карповки, 5 лит П, Санкт-Петербург">
+            <div class="contacts__image-wrapper">
+              <img src="img/map.png" width="1200" height="430" alt="Офис по адресу: наб. Реки Карповки, 5 лит П, Санкт-Петербург">
+            </div>
           </div>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDqnh4Q9rIaFY6Se7ZtGNmt3DXLaHdePo&callback=initMap&libraries=&v=weekly" async></script>
 
           <div class="contacts__description">
             <p class="contacts__address reset-p">
@@ -379,6 +380,7 @@
         <button class="modal-feedback__close" type="button" aria-label="Закрыть"></button>
       </form>
     </section>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDqnh4Q9rIaFY6Se7ZtGNmt3DXLaHdePo&callback=initMap&libraries=&v=weekly" async></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

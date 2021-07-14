@@ -44,6 +44,7 @@ function showSlides(n) {
   }
 }
 
+const mainPage = document.querySelector(".page");
 const feedbackLink = document.querySelector(".contacts__button");
 const feedbackPopUp = document.querySelector(".modal-feedback");
 const feedbackForm = feedbackPopUp.querySelector(".modal-feedback__form");
@@ -67,6 +68,7 @@ feedbackLink.addEventListener("click", function (evt) {
   evt.preventDefault();
 
   feedbackPopUp.classList.add("modal_show");
+  mainPage.classList.add("page_overlay");
 
   if (storageName) {
     feedbackName.value = storageName;
@@ -97,6 +99,7 @@ feedbackClose.addEventListener("click", function (evt) {
   evt.preventDefault()
 
   feedbackPopUp.classList.remove("modal_show");
+  mainPage.classList.remove("page_overlay");
   feedbackPopUp.classList.remove("modal_error");
 });
 
@@ -120,6 +123,7 @@ window.addEventListener("keydown", function (evt) {
     if (feedbackPopUp.classList.contains("modal_show")) {
       evt.preventDefault();
       feedbackPopUp.classList.remove("modal_show");
+      mainPage.classList.remove("page_overlay");
       feedbackPopUp.classList.remove("modal_error");
     }
   }
